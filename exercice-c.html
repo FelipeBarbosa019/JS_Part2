@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    </head>
+    <header>
+        <a href="index.html"><p>Exercicio a</p></a>
+        <a href="exercice-b.html"><p>Exercicio b</p></a>
+        <a id="current" href="exercice-b.html"><p>Exercicio c</p></a>
+    </header>
+    <body>
+        <h1>Esta aplicação tem a função de calcular quantos dias, aproximadamente, faltam para sua morte.</h1>
+         
+        <form id="comparation">
+            <div class="position">
+                Insira sua data de nascimento: 
+                <input id="box-date" type="date">
+            </div>
+            <div class="position">
+                Sexo:  
+                <input type="radio" name="sexo" value="M" id="masculino" required> <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" value="F" id="feminino"> <label for="feminino"> Feminino </label>
+            </div>
+                <input id="btn" type="submit" value="Verificar">
+        </form>
+        <h2></h2>
+        <div id="considerations">
+            <h2>Para o cálculo acima, foram consideradas as seguintes informações:</h2>
+            <i>a.Expectativa de morte, segundo o IBGE, para homens é de 73,1 anos e para mulheres 80,1 anos;</i>
+            <i>b.Foram desconsiderados anos bissextos;</i>
+            <i>c.Todos os meses foram considerados como possuindo 30 dias.</i>
+        </div>
+        <script src="exercice-c.js"></script>
+    </body>
+</html>
